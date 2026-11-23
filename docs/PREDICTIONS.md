@@ -18,3 +18,7 @@ et rendre visibles les surprises — qui sont les résultats les plus informatif
 | P09 | 2026-11-23 | IA | G5′ (gabarit seul, sans maître) progresse mais plafonne sous G5 | 55 | imitation | — | — |
 | P10 | 2026-11-23 | IA | Le contrôle « gabarit brouillé » annule l'avantage de G5 | 70 | imitation | — | — |
 | P11 | 2026-11-23 | IA | Le cercle sera appris avant le carré (virage constant plus facile que l'alternance droit/virage) | 60 | imitation | — | — |
+| P12 | 2026-11-23 | IA | H7 : « remontrer en insistant » est le facteur au plus gros effet de toute l'étude | 70 | imitation | — | — |
+| P13 | 2026-11-23 | IA | H8 : l'encouragement gradué rend l'apprentissage possible là où le pouce binaire échoue (début) | 75 | imitation | — | — |
+| P14 | 2026-11-23 | IA | H9 : le rappel reconstructif généralise mieux que le replay fidèle hors distribution | 50 | imitation | — | — |
+| P15 | 2026-11-23 | IA | H6 : la composante motrice de la Shadow apporte peu tant que l'espace moteur est simple | 55 | imitation | — | — |

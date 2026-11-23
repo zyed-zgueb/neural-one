@@ -24,3 +24,7 @@ Une décision n'est jamais modifiée en place : on ajoute une nouvelle entrée q
 | D17 | 2026-11-23 | « Peu d'exemples » = peu de démonstrations ; les essais de l'élève sont comptés et rapportés à part | Compteur unique | Fidèle à l'objectif, sans masquer le coût en essais | IA (ex-Q6) | Adoptée, réversible |
 | D18 | 2026-11-23 | L'auto-évaluation par gabarit (G5) est centrale | Maître seul | Cohérent avec l'image du maître et de l'élève | IA (ex-Q7) | Adoptée, réversible |
 | D19 | 2026-11-23 | Règle de collaboration : aucune question technique à l'humain ; questions d'intuition créative uniquement | — | Demande explicite de l'humain | Humain | Adoptée |
+| D20 | 2026-11-23 | Shadow sensorimotrice (visuel + plan de geste + proprioception) ; pratique mentale comptée à part | Shadow visuelle seule | Intuition 1 | Humain → IA | Adoptée |
+| D21 | 2026-11-23 | Trois maîtres : muet / remontre / remontre en insistant ; comparaisons d'élèves à maître égal | Maître muet seul | Intuition 2 | Humain → IA | Adoptée |
+| D22 | 2026-11-23 | Encouragement gradué (erreur de prédiction) + rafraîchissement de la Shadow après jugement | Pouce binaire seul | Intuition 3 | Humain → IA | Adoptée |
+| D23 | 2026-11-23 | Shadow C redéfinie : rappel reconstructif qui renforce et alimente une mémoire de concept | Réactivation = replay | Intuition 4 ; distingue enfin Shadow C du replay | Humain → IA | Adoptée |

@@ -188,3 +188,77 @@ Plan révisé :
 | 6 | Feedback retardé (dans la séquence et entre dessins) |
 | 7 | Dashboard : galerie « modèle montré / dessin de l'élève / jugement » essai par essai |
 | 8 | Campagnes pré-enregistrées et rapport |
+
+---
+
+## 10. Intégration des intuitions humaines (CR-03)
+
+Chaque intuition est traduite en **mécanisme**, puis en **hypothèse testable avec son contrôle**.
+
+### 10.1 « Je ressens les muscles et les sens qui visualisent le mouvement » → Shadow sensorimotrice
+Le souvenir n'est pas une photo : c'est le **mouvement simulé**.
+- La Shadow perceptive devient **sensorimotrice** : percevoir le modèle active un **plan de geste**
+  (séquence de virages pressentie, « ce que ma main ferait ») stocké avec la trace visuelle.
+- L'élève reçoit une **proprioception** : à chaque pas il « sent » son propre état moteur (cap,
+  virage, position du stylo) — copie d'efférence.
+- **Pratique mentale** : l'élève peut simuler le tracé sans dessiner (modèle interne), imaginer le
+  résultat et le comparer au gabarit. Essais imaginés comptés à part.
+- *Hypothèse H6* : Shadow visuelle + motrice > visuelle seule > motrice seule.
+- *Connu* : imagerie motrice, pratique mentale, neurones miroirs, copie d'efférence (Wolpert).
+  *Nouveau ici* : son rôle dans l'apprentissage local récompensé à peu d'exemples.
+
+### 10.2 « Il remontre en insistant sur ce qui est important » → maître démonstratif
+Trois maîtres, du plus pauvre au plus riche :
+| Maître | Après un échec |
+|--------|----------------|
+| Muet | pouce ±1 |
+| Remontre | pouce + ré-affiche le modèle |
+| Remontre en insistant | pouce + ré-affiche le modèle avec **accent** sur les éléments décisifs (coins du carré, courbure régulière du cercle), de préférence là où l'élève s'est trompé |
+- L'accent agit comme un **signal attentionnel** : il module la plasticité là où il porte
+  (proche d'AGREL, Roelfsema & van Ooyen 2005 — rétroaction attentionnelle).
+- **Honnêteté informationnelle** : l'accent est une information en plus. On compare donc les maîtres
+  entre eux, et on ne compare les élèves qu'*à maître égal*.
+- *Hypothèse H7* : « remontrer en insistant » réduit fortement le nombre de démonstrations nécessaires.
+  *Contrôle* : accent placé au hasard (même quantité de « mise en valeur », sans pertinence).
+
+### 10.3 « Encouragement. C'est presque ça. Regarde bien le modèle. » → note graduée + retour au modèle
+- **« C'est presque ça »** : récompense **graduée** et positive (façonnage / *shaping*), qui donne une
+  direction même quand le dessin est raté → répond au problème d'exploration.
+  Le signal effectif est une **erreur de prédiction** : « mieux que ce que j'attendais » renforce.
+- **« Regarde bien le modèle »** : après le jugement, l'élève **rafraîchit sa Shadow** en réobservant
+  le modèle et se compare à nouveau.
+- *Hypothèse H8* : encouragement gradué > pouce binaire, surtout au début.
+  *Contrôle* : note graduée bruitée sans lien avec la qualité.
+
+### 10.4 « Chaque fois que je repense au carré, j'ancre le souvenir et je généralise » → rappel actif reconstructif
+C'est l'intuition la plus forte, et elle redéfinit Shadow C.
+- **Le rappel renforce** : au lieu de s'effacer passivement, la Shadow est consolidée à chaque
+  rappel (force ↑, décroissance plus lente ensuite).
+- **Le rappel reconstruit** : rappeler, ce n'est pas relire une photo stockée (= replay) ; c'est
+  laisser le réseau **reconstituer** le carré à partir d'un indice partiel. La version rappelée est
+  donc la version *du réseau*, qui perd les détails accidentels (position exacte, épaisseur).
+- **Le rappel généralise** : en rappelant plusieurs carrés différents, les reconstructions convergent
+  vers ce qu'ils ont en commun → une **mémoire de concept** lente (prototype intérieur) se forme à
+  partir des rappels, et sert ensuite de gabarit.
+- *Hypothèse H9 (centrale)* : à nombre de démonstrations **et** de mises à jour égal, le rappel
+  reconstructif généralise mieux (formes nouvelles, hors distribution) que le replay fidèle.
+  *Contrôles* : (a) replay fidèle de l'image stockée ; (b) même nombre de rappels mais sans
+  renforcement ; (c) rappel de souvenirs mélangés entre catégories.
+- *Connu* : effet de test / pratique du rappel (Roediger & Karpicke 2006), reconsolidation
+  (Nader 2000), consolidation et formation de schémas (McClelland 1995 ; Tse 2007), complétion de
+  motifs (Hopfield). *Nouveau ici* : l'utiliser comme moteur d'abstraction dans un réseau à
+  plasticité locale récompensée, mesuré en nombre de démonstrations.
+
+Cette intuition donne enfin une distinction nette entre **Shadow C et replay** : le replay rejoue
+la copie stockée ; le rappel reconstruit avec le réseau courant. C'est testable directement.
+
+### 10.5 Élèves révisés
+| Élève | Shadow | Rappel | Maître |
+|-------|--------|--------|--------|
+| G3 | motrice | — | variable |
+| G5 | sensorimotrice (gabarit) | — | variable |
+| G6 | sensorimotrice | **rappel reconstructif + renforcement + concept** | variable |
+| G6-replay | sensorimotrice | replay fidèle (contrôle) | variable |
+| G6-mental | G6 + pratique mentale | idem | variable |
+
+Plan d'expériences : élèves × maîtres (muet / remontre / insiste) × démonstrations (1, 2, 4, 8 par forme).
