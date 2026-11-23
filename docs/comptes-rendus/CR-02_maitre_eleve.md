@@ -11,20 +11,22 @@ acquiert un rôle de **gabarit intérieur** qui ne se réduit plus à une trace 
 - Prédictions P07–P11.
 - Aucun code.
 
-## 3. Ce dont j'ai besoin de vous
-- **Q4. Le maître juge-t-il « un carré » ou « ce carré » ?** Votre phrase dit « récompenserait un carré
-  refait ». Je l'ai lue comme un jugement de *catégorie* (D11). Si vous pensiez « une copie fidèle »,
-  le paradigme mesure autre chose (la copie, pas le concept).
-- **Q5. L'élève voit-il le geste du maître, ou seulement le résultat ?** Si le maître montre *comment*
-  il trace, c'est de l'imitation de geste (plus facile, information plus riche) ; s'il montre seulement
-  l'image, l'élève doit inventer le geste. J'ai pris « seulement l'image » comme cas principal et le
-  geste comme référence G0.
-- **Q6. L'élève a-t-il droit à plusieurs essais par démonstration ?** Votre intuition sur « le petit
-  nombre d'exemples » porte-t-elle sur les démonstrations du maître, ou sur le nombre total de
-  tentatives ? (D13 les compte séparément.)
-- **Q7. L'élève se juge-t-il lui-même ?** Un enfant qui dessine voit que son carré « ne ressemble pas »
-  avant que le maître ne parle. C'est G5 ; je l'ai rendu central. Confirmez-vous que c'est dans
-  l'esprit de votre idée ?
+## 3. Questions pour votre intuition
+*(Révisé : les questions techniques initiales Q4–Q7 ont été tranchées par l'IA, voir D15–D18.)*
+
+1. **Quand vous apprenez un geste nouveau (une signature, un pas de danse, un nœud), qu'est-ce qui
+   reste en vous juste après que le modèle a disparu ?** Une image ? Une sensation dans la main ? Un rythme ?
+   *Pourquoi je demande : cela me dit quoi mettre dans la mémoire Shadow.*
+2. **Un bon maître fait-il autre chose que dire « bravo » ou « raté » ?** Que fait le meilleur
+   professeur que vous ayez eu quand l'élève se trompe ?
+   *Pourquoi : aujourd'hui mon maître est muet sauf un pouce levé ou baissé ; peut-être est-ce trop pauvre, ou au contraire l'essentiel.*
+3. **Un enfant rate son carré. Qu'est-ce qui fait qu'il essaie *autrement* la fois suivante, plutôt que de refaire la même erreur ?**
+   *Pourquoi : c'est le point où mes élèves artificiels risquent de bloquer.*
+4. **Le souvenir du modèle montré doit-il s'effacer ?** Imaginez un élève qui ne l'oublie jamais, et un autre qui l'oublie en deux secondes : lequel apprend le mieux, et pourquoi ? Le sommeil a-t-il un rôle ?
+   *Pourquoi : la vitesse d'oubli est un réglage central et je n'ai aucune bonne raison d'en choisir une.*
+5. **À quoi reconnaîtriez-vous qu'un élève a vraiment « compris » le carré, et pas seulement appris à le recopier ?**
+   Et s'il apprenait « trop vite pour être honnête », à quoi ressemblerait sa triche ?
+   *Pourquoi : vos réponses deviendront des tests.*
 
 ## 4. Faits, interprétations, suppositions
 | Type | Énoncé | Confiance |

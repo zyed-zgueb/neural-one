@@ -8,9 +8,11 @@
 ## 2. Ce qui a changé depuis le dernier compte rendu
 - <livrables, avec lien vers fichiers / commits>
 
-## 3. Ce dont j'ai besoin de vous
-<Questions formulées pour solliciter l'intuition (« qu'est-ce qui vous surprendrait ? »),
-pas seulement des oui/non techniques. Chaque question indique ce qui change selon la réponse.>
+## 3. Questions pour votre intuition
+<Règle : AUCUNE question technique. Les choix techniques sont tranchés par l'IA, tracés dans
+JOURNAL_DECISIONS.md et réversibles. Les questions s'adressent à l'intuition d'un humain créatif :
+expérience vécue, images, analogies, ce qui « sonne faux ». Pas de jargon. 3 à 5 questions max.
+Sous chaque question, une ligne « pourquoi je demande » en langage courant.>
 
 ## 4. Faits, interprétations, suppositions
 | Type | Énoncé | Source / preuve | Confiance |
