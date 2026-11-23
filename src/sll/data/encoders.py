@@ -106,6 +106,11 @@ class OrientationHistogram(EdgeEncoder):
 
 
 def get_encoder(name: str, seed: int = 0) -> Encoder:
+    if name.startswith("SV0"):
+        from .innate_vision import InnateVision  # import tardif (évite l'import circulaire)
+        return {"SV0": lambda: InnateVision(),
+                "SV0-orientation": lambda: InnateVision(use_topology=False),
+                "SV0-topologie": lambda: InnateVision(use_orientation=False)}[name]()
     return {"pixels": PixelEncoder, "random": lambda: RandomEncoder(seed=seed),
             "edges": EdgeEncoder, "orientations": OrientationHistogram}[name]()
 

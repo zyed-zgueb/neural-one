@@ -62,41 +62,44 @@ def classification_figure(path_json: Path, passes: int, out: Path):
 def drawing_figure(path_json: Path, out: Path):
     S = json.loads(path_json.read_text())
     summ = S["summary"]
-    series = [("G1-reinforce|presque", "#eb6834", "G1 REINFORCE, « presque ça »"),
-              ("G1-reinforce|pouce", "#eb6834", "G1 REINFORCE, pouce seul"),
-              ("G2-trace|presque", "#1baf7a", "G2 local + trace, « presque ça »"),
-              ("G2-trace|pouce", "#1baf7a", "G2 local + trace, pouce seul")]
-    fig, axes = plt.subplots(1, 3, figsize=(12.5, 3.6), sharey=True)
+    series = [("G1-reinforce|presque", "#eb6834", "-", "G1 REINFORCE, « presque ça »"),
+              ("G1-reinforce|pouce", "#eb6834", (0, (4, 3)), "G1 REINFORCE, pouce seul"),
+              ("G2-trace|presque", "#1baf7a", "-", "G2 local + trace, « presque ça »"),
+              ("G2-trace|pouce", "#1baf7a", (0, (4, 3)), "G2 local + trace, pouce seul")]
+    fig, axes = plt.subplots(1, 3, figsize=(13, 3.7), gridspec_kw={"width_ratios": [1, 1, 1.1]})
     for ax, n_demo in zip(axes[:2], (1, 4)):
-        for key, col, lab in series:
+        for key, col, ls, lab in series:
             k = f"{key}|{n_demo}"
-            if k not in summ:
-                continue
             xs = [int(a) for a in summ[k]]
             ys = [summ[k][a]["acc"] for a in summ[k]]
-            ls = "-" if "presque" in key else (0, (4, 3))
             ax.plot(xs, ys, ls=ls, marker="o", color=col, lw=2, ms=4, mec="white", mew=1, label=lab)
         ax.set_title(f"{n_demo} démonstration{'s' if n_demo > 1 else ''} par forme", fontsize=9.5, color=INK)
         ax.set_xlabel("essais de l'élève (dessins jugés)")
+        ax.set_ylim(-0.02, 1.02)
         ax.grid(axis="y", color="#ecebe6", lw=0.8)
     axes[0].set_ylabel("dessins acceptés (formes jamais vues)")
-    axes[1].legend(loc="upper left", fontsize=7, frameon=False)
+    axes[0].legend(loc="upper left", fontsize=7, frameon=False)
+    # ce qui a été appris, par forme (fin d'apprentissage, 4 démonstrations)
     ax = axes[2]
-    for n_demo, ls in ((1, "-"), (4, (4, 3))):
-        k = f"G0-imitation|geste|{n_demo}"
-        if k in summ:
-            xs = [int(a) for a in summ[k]]
-            ys = [summ[k][a]["acc"] for a in summ[k]]
-            ax.plot(xs, ys, ls=ls, marker="o", color="#2a78d6", lw=2, ms=4, mec="white", mew=1,
-                    label=f"{n_demo} démo/forme")
-    ax.set_title("G0 imitation du geste (référence haute)", fontsize=9.5, color=INK)
-    ax.set_xlabel("passages sur les démonstrations")
-    ax.legend(loc="lower right", fontsize=7, frameon=False)
-    ax.grid(axis="y", color="#ecebe6", lw=0.8)
-    for a in axes:
-        a.set_ylim(-0.02, 1.02)
-    fig.suptitle(f"Apprendre à dessiner sans Shadow — {S['reps']} répétitions", fontsize=10.5, color=INK,
-                 x=0.01, ha="left")
+    rows = [("G0-imitation|geste|4", "G0 imitation du geste"), ("G1-reinforce|presque|4", "G1 « presque ça »"),
+            ("G2-trace|presque|4", "G2 « presque ça »"), ("G1-reinforce|pouce|4", "G1 pouce seul"),
+            ("G2-trace|pouce|4", "G2 pouce seul")]
+    for i, (k, lab) in enumerate(rows):
+        last = list(summ[k].values())[-1]
+        ax.plot([last["acc_carre"], last["acc_cercle"]], [i, i], color="#d8d7d0", lw=2, zorder=1)
+        ax.plot(last["acc_cercle"], i, "o", color="#2a78d6", ms=8, mec="white", mew=1.5, zorder=2,
+                label="cercles" if i == 0 else None)
+        ax.plot(last["acc_carre"], i, "s", color="#eb6834", ms=8, mec="white", mew=1.5, zorder=3,
+                label="carrés" if i == 0 else None)
+    ax.set_yticks(range(len(rows)), [r[1] for r in rows])
+    ax.invert_yaxis()
+    ax.set_xlim(-0.03, 1.03)
+    ax.set_xlabel("dessins acceptés en fin d'apprentissage")
+    ax.set_title("Par forme (4 démonstrations par forme)", fontsize=9.5, color=INK)
+    ax.legend(loc="lower right", fontsize=7.5, frameon=False)
+    ax.grid(axis="x", color="#ecebe6", lw=0.8)
+    fig.suptitle(f"Apprendre à dessiner sans Shadow — {S['reps']} répétitions, formes de test jamais vues",
+                 fontsize=10.5, color=INK, x=0.01, ha="left")
     fig.tight_layout(rect=(0, 0, 1, 0.9))
     fig.savefig(out, dpi=160)
     plt.close(fig)

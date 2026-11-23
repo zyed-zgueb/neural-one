@@ -28,3 +28,6 @@ et rendre visibles les surprises — qui sont les résultats les plus informatif
 | P19 | 2026-11-23 | Humain | Après une nuit, les idées (le concept) deviennent plus claires | — | sommeil | — | — |
 | P20 | 2026-11-23 | IA | Le sous-concept « côtés égaux » émergera en dernier, et plus facilement par le rythme du geste que par la vue | 60 | imitation | — | — |
 | P21 | 2026-11-23 | IA | Les élèves sans rappel reconstructif échouent surtout sur les tailles jamais vues (ils copient) | 65 | imitation | — | — |
+| P22 | 2026-11-23 | Humain | Les formes ouvertes / fermées sont des primitives reconnues dès la naissance (et utiles à l'apprentissage) | — | SV0 | — | — |
+| P23 | 2026-11-23 | IA | SV0 ≈ E3 sur L2 (la fermeture n'aide pas à séparer cercle et carré), mais SV0 > E3 sur L4 (contours fragmentés) | 50 | SV0 | — | — |
+| P24 | 2026-11-23 | IA | Le signal interne de fermeture réduit d'au moins moitié le nombre d'essais nécessaires pour dessiner une forme acceptée | 60 | dessin | — | — |

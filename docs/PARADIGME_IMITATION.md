@@ -385,3 +385,75 @@ minimale.
 ### 12.4 Tolérance du maître
 La frontière entre « défaut acceptable » et « ce n'est plus un carré » est fixée avant les expériences
 et documentée (et soumise à l'intuition humaine, CR-05 Q1). Elle est la même pour tous les élèves.
+
+---
+
+## 13. Un système visuel inné (CR-07)
+
+> Intuition humaine : « Notre cerveau sait dès la naissance reconnaître des structures visuelles
+> simples : contiguïté, ligne, orientation. Je fais l'hypothèse que les formes ouvertes ou fermées
+> sont des formes primitives reconnues dès la naissance. »
+
+### 13.1 Ce que disent les neurosciences (connu)
+- **Orientation et lignes (V1)** : cellules simples et complexes sélectives à l'orientation
+  (Hubel & Wiesel 1962) ; cette sélectivité est présente **avant toute expérience visuelle**, mise en
+  place par les vagues rétiniennes spontanées (Katz & Shatz 1996 ; Crair 1999).
+- **Terminaisons de ligne** : cellules « end-stopped » (hypercomplexes) de V1/V2, qui répondent au
+  bout d'un segment (Hubel & Wiesel 1965).
+- **Contiguïté et bonne continuation** : intégration de contour par les connexions horizontales de V1,
+  qui lient des orientations voisines et alignées (« champ d'association », Field, Hayes & Hess 1993).
+- **Fermeture, topologie** : Lin Chen (1982, *Science*) propose que la perception extrait d'abord les
+  propriétés **topologiques** (connexité, trous, fermeture), avant la géométrie ; détection
+  ouvert/fermé très rapide chez l'humain, discrimination chez l'abeille. Chez le poussin nouveau-né,
+  des biais de forme sont présents sans expérience (Vallortigara et collègues).
+- **Appartenance de bord, figure/fond (V2)** : von der Heydt (Zhou et al. 2000).
+- **Angles et courbure (V2, V4)** : cellules sélectives aux angles (Ito & Komatsu 2004) et à la courbure
+  du contour (Pasupathy & Connor 2001) — **chez l'adulte** ; leur caractère inné n'est pas établi.
+- **Géométrie comme langage de programmes** : les humains perçoivent les quadrilatères réguliers
+  (carré) par une description compacte du type « répéter 4 fois [avancer, tourner 90°] »
+  (Sablé-Meyer et al. 2021, 2022 ; Dehaene). C'est exactement la représentation du stylo de l'élève.
+
+*Références citées de mémoire : à vérifier avant le rapport final.*
+
+### 13.2 Le système visuel inné de l'élève (SV0)
+Module **fixe, non appris**, identique pour tous les élèves. Chaque étage correspond à un mécanisme
+neuro-inspiré, implémenté comme une **abstraction fonctionnelle** (on calcule ce que la population de
+neurones signale, pas les neurones eux-mêmes).
+
+| Étage | Correspondance | Ce qu'il signale |
+|-------|----------------|------------------|
+| Orientation locale | cellules simples V1 | 8 orientations en chaque point |
+| Tolérance de position | cellules complexes V1 | énergie d'orientation par grandes régions + globale |
+| Contiguïté | connexité | nombre de morceaux de trait |
+| Terminaisons | cellules end-stopped | nombre de bouts de ligne |
+| Jonctions | — | nombre de croisements / embranchements |
+| Fermeture | perception topologique (Chen) | le trait enferme-t-il une région ? (strict, et après « complétion » des petites lacunes par bonne continuation) |
+
+**Pas de détecteur d'angle, de coin ni de courbure** : ce sont des propriétés de l'adulte dont le
+caractère inné n'est pas établi. Elles doivent **émerger** (D26). C'est la frontière proposée entre
+l'inné et l'appris :
+
+| Inné (fourni) | Appris (doit émerger) |
+|---------------|-----------------------|
+| orientation, ligne, contiguïté, bout de ligne, fermeture | coin, angle droit, côtés égaux, rondeur régulière, « quatre » |
+
+### 13.3 Point d'honnêteté : la fermeture ne distingue pas un carré d'un cercle
+Les deux sont fermés. La fermeture **ne donne pas la réponse** à la question cercle/carré (vérifié par
+une sonde). Elle distingue en revanche **une forme d'un gribouillis** : c'est précisément le premier
+critère du maître, et le premier obstacle de l'élève qui explore (CR-06 : presque aucun gribouillis
+n'est fermé).
+
+### 13.4 Double rôle des primitives innées
+1. **Percevoir** les modèles du maître (entrée du réseau).
+2. **Se juger soi-même** : l'élève perçoit son propre dessin avec le même système. Il « sent » sans
+   maître si son trait est fermé, s'il a des bouts libres, s'il est d'un seul tenant. Ces sensations
+   fournissent un **signal interne inné** (« mon trait se referme ») — une première forme du gabarit
+   intérieur (G5), avant même d'avoir appris ce qu'est un carré.
+
+### 13.5 Hypothèses et contrôles
+- *H10* : à nombre d'exemples égal, SV0 permet de reconnaître cercle/carré aussi bien que
+  l'histogramme d'orientations E3, et mieux sur les formes fragmentées (L4) grâce à la complétion.
+  *Ablations* : SV0 sans fermeture ; SV0 sans topologie (orientation seule).
+- *H11* : le signal interne inné de fermeture accélère fortement l'apprentissage du dessin.
+  *Contrôle* : même signal interne mais calculé sur le dessin d'un autre essai (brouillé).
+- *Sonde* : la fermeture seule doit rester au hasard pour cercle/carré.
