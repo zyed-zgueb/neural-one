@@ -44,6 +44,6 @@ def test_topology_does_not_reveal_circle_vs_square():
 
 def test_sv0_dimensions():
     X = make_set("L2", 3, 0, "dim").X
-    for name, d in (("SV0", 45), ("SV0-orientation", 40), ("SV0-topologie", 5)):
+    for name, d in (("SV0", 13), ("SV0-carte", 45), ("SV0-orientation", 8), ("SV0-topologie", 5)):
         e = get_encoder(name)
         assert e(X).shape == (6, d) and e.dim == d

@@ -26,7 +26,7 @@ from sll.data.encoders import Normalizer, get_encoder  # noqa: E402
 from sll.models.train import run_classification  # noqa: E402
 
 SEED = 0
-ENCODERS = ["orientations", "SV0", "SV0-orientation", "SV0-topologie"]
+ENCODERS = ["orientations", "SV0", "SV0-carte", "SV0-orientation", "SV0-topologie"]
 MODELS = {"M0-backprop": {"lr": 0.05}, "M2-lecture": {"lr": 0.1, "lam": 0.0}, "1-PPV": {}}
 BUDGETS = [1, 2, 4, 8, 16, 32]
 DATA = {}

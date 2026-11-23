@@ -5,7 +5,7 @@ Abstractions fonctionnelles de mécanismes présents tôt dans le développement
 | Étage | Inspiration | Sortie |
 |-------|-------------|--------|
 | orientation locale | cellules simples V1 | énergie par orientation (8) |
-| tolérance de position | cellules complexes V1, grands champs récepteurs | histogramme global (8) + carte grossière 2×2 (32) |
+| tolérance de position | cellules complexes V1, grands champs récepteurs | histogramme global (8) [+ carte grossière 2×2 (32), option] |
 | contiguïté | connexité du trait | nombre de morceaux |
 | terminaisons | cellules « end-stopped » | nombre de bouts de ligne |
 | jonctions | — | nombre d'embranchements |
@@ -150,10 +150,14 @@ class InnateVision(Encoder):
     """SV0 : orientation (globale + carte 2×2) + primitives topologiques."""
     name = "SV0"
 
-    def __init__(self, use_orientation: bool = True, use_topology: bool = True, n_orient: int = 8):
-        self.use_orientation, self.use_topology = use_orientation, use_topology
+    def __init__(self, use_orientation: bool = True, use_topology: bool = True, n_orient: int = 8,
+                 use_map: bool = False):
+        """use_map : ajoute une carte grossière 2×2 des orientations (rétinotopique). Désactivée par
+        défaut : CR-07 montre qu'elle dégrade fortement l'apprentissage à peu d'exemples (elle ajoute
+        32 dimensions dépendantes de la position, sans rapport avec la forme)."""
+        self.use_orientation, self.use_topology, self.use_map = use_orientation, use_topology, use_map
         self.kernels = orientation_kernels(n_orient)
-        self.dim = (n_orient + 4 * n_orient if use_orientation else 0) + (5 if use_topology else 0)
+        self.dim = ((n_orient + (4 * n_orient if use_map else 0)) if use_orientation else 0) + (5 if use_topology else 0)
         if not use_topology:
             self.name = "SV0-orientation"
         elif not use_orientation:
@@ -163,6 +167,8 @@ class InnateVision(Encoder):
         maps = np.stack([np.abs(_conv2d_same(X, k)) for k in self.kernels], 1)  # (n,8,32,32)
         tot = maps.sum((1, 2, 3))[:, None] + 1e-9
         glob = maps.sum((2, 3)) / tot
+        if not self.use_map:
+            return glob
         coarse = maps.reshape(len(X), maps.shape[1], 2, 16, 2, 16).sum((3, 5)).reshape(len(X), -1) / tot
         return np.concatenate([glob, coarse], 1)
 
