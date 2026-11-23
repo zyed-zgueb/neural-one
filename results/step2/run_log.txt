@@ -1,0 +1,192 @@
+{
+ "seed": 0,
+ "git_commit": "f0dc872",
+ "n_random": 20000,
+ "leakage": {
+  "L1": {
+   "min_distance": 1.202211503854459,
+   "median_distance": 7.428434600083489,
+   "near_duplicates": 0,
+   "reference_median_nn_distance_within_test": 5.375545027436463
+  },
+  "L2": {
+   "min_distance": 2.261256564390693,
+   "median_distance": 7.794854992470263,
+   "near_duplicates": 0,
+   "reference_median_nn_distance_within_test": 5.9098038250013
+  },
+  "L3": {
+   "min_distance": 4.645083431200004,
+   "median_distance": 7.814131096677122,
+   "near_duplicates": 0,
+   "reference_median_nn_distance_within_test": 6.5575177192544265
+  }
+ },
+ "teacher_validation": {
+  "L0": {
+   "cercle": {
+    "accepté_comme_sa_classe": 1.0,
+    "accepté_comme_autre_classe": 0.0,
+    "n": 300
+   },
+   "carré": {
+    "accepté_comme_sa_classe": 1.0,
+    "accepté_comme_autre_classe": 0.0,
+    "n": 300
+   }
+  },
+  "L1": {
+   "cercle": {
+    "accepté_comme_sa_classe": 1.0,
+    "accepté_comme_autre_classe": 0.0,
+    "n": 300
+   },
+   "carré": {
+    "accepté_comme_sa_classe": 1.0,
+    "accepté_comme_autre_classe": 0.0,
+    "n": 300
+   }
+  },
+  "L2": {
+   "cercle": {
+    "accepté_comme_sa_classe": 1.0,
+    "accepté_comme_autre_classe": 0.0,
+    "n": 300
+   },
+   "carré": {
+    "accepté_comme_sa_classe": 1.0,
+    "accepté_comme_autre_classe": 0.0,
+    "n": 300
+   }
+  },
+  "L3": {
+   "cercle": {
+    "accepté_comme_sa_classe": 0.98,
+    "accepté_comme_autre_classe": 0.0,
+    "n": 300
+   },
+   "carré": {
+    "accepté_comme_sa_classe": 1.0,
+    "accepté_comme_autre_classe": 0.0,
+    "n": 300
+   }
+  },
+  "L4": {
+   "cercle": {
+    "accepté_comme_sa_classe": 0.93,
+    "accepté_comme_autre_classe": 0.0,
+    "n": 300
+   },
+   "carré": {
+    "accepté_comme_sa_classe": 1.0,
+    "accepté_comme_autre_classe": 0.0,
+    "n": 300
+   }
+  },
+  "OOD-test": {
+   "cercle": {
+    "accepté_comme_sa_classe": 1.0,
+    "accepté_comme_autre_classe": 0.0,
+    "n": 300
+   },
+   "carré": {
+    "accepté_comme_sa_classe": 1.0,
+    "accepté_comme_autre_classe": 0.0,
+    "n": 300
+   }
+  }
+ },
+ "perfect_student": {
+  "carré": 1.0,
+  "cercle": 1.0
+ },
+ "pen_vs_generator_iou": {
+  "mean": 1.0,
+  "min": 1.0
+ },
+ "random_students": {
+  "uniforme": {
+   "n": 20000,
+   "carré": {
+    "acceptés": 0,
+    "taux": 0.0,
+    "ic95": [
+     0.0,
+     0.00015
+    ],
+    "note_moyenne": 0.03887723330513867,
+    "note_p99": 0.36880894972761813,
+    "note_max": 0.6921770827530536,
+    "frac_note_sup_0.5": 0.0024
+   },
+   "cercle": {
+    "acceptés": 0,
+    "taux": 0.0,
+    "ic95": [
+     0.0,
+     0.00015
+    ],
+    "note_moyenne": 0.004336185805598982,
+    "note_p99": 0.08804414098761928,
+    "note_max": 0.46468031822170214,
+    "frac_note_sup_0.5": 0.0
+   }
+  },
+  "souvent_tout_droit": {
+   "n": 20000,
+   "carré": {
+    "acceptés": 1,
+    "taux": 5e-05,
+    "ic95": [
+     8.82605523813606e-06,
+     0.00028319785280960614
+    ],
+    "note_moyenne": 0.023377211054073792,
+    "note_p99": 0.38346215525187183,
+    "note_max": 0.8531034774428811,
+    "frac_note_sup_0.5": 0.00405
+   },
+   "cercle": {
+    "acceptés": 0,
+    "taux": 0.0,
+    "ic95": [
+     0.0,
+     0.00015
+    ],
+    "note_moyenne": 0.004162632992108399,
+    "note_p99": 0.1001529350504281,
+    "note_max": 0.4584300206490481,
+    "frac_note_sup_0.5": 0.0
+   }
+  },
+  "uniforme_sans90": {
+   "n": 20000,
+   "carré": {
+    "acceptés": 0,
+    "taux": 0.0,
+    "ic95": [
+     0.0,
+     0.00015
+    ],
+    "note_moyenne": 0.03429244507962411,
+    "note_p99": 0.3578730049826762,
+    "note_max": 0.7489019156793377,
+    "frac_note_sup_0.5": 0.00245
+   },
+   "cercle": {
+    "acceptés": 0,
+    "taux": 0.0,
+    "ic95": [
+     0.0,
+     0.00015
+    ],
+    "note_moyenne": 0.00422290726293142,
+    "note_p99": 0.09379797884955138,
+    "note_max": 0.4480469813330854,
+    "frac_note_sup_0.5": 0.0
+   }
+  }
+ },
+ "duration_s": 70.9947407245636
+}
+{'L1': {'encre_totale': 0.515, 'centroide_x': 0.483, 'centroide_y': 0.493, 'epaisseur_moyenne': 0.805, 'largeur_boite': 0.67, 'hauteur_boite': 0.671, 'aire_boite': 0.672, 'dispersion': 0.577, 'NUISANCE_jointe': 0.802, 'GEOMETRIE_jointe': 0.999}, 'L2': {'encre_totale': 0.509, 'centroide_x': 0.47, 'centroide_y': 0.466, 'epaisseur_moyenne': 0.479, 'largeur_boite': 0.478, 'hauteur_boite': 0.478, 'aire_boite': 0.506, 'dispersion': 0.568, 'NUISANCE_jointe': 0.491, 'GEOMETRIE_jointe': 0.776}, 'L3': {'encre_totale': 0.508, 'centroide_x': 0.5, 'centroide_y': 0.491, 'epaisseur_moyenne': 0.484, 'largeur_boite': 0.544, 'hauteur_boite': 0.537, 'aire_boite': 0.542, 'dispersion': 0.601, 'NUISANCE_jointe': 0.511, 'GEOMETRIE_jointe': 0.628}, 'L4': {'encre_totale': 0.531, 'centroide_x': 0.471, 'centroide_y': 0.48, 'epaisseur_moyenne': 0.517, 'largeur_boite': 0.547, 'hauteur_boite': 0.552, 'aire_boite': 0.552, 'dispersion': 0.559, 'NUISANCE_jointe': 0.53, 'GEOMETRIE_jointe': 0.578}}

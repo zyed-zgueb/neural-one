@@ -13,11 +13,11 @@ et rendre visibles les surprises — qui sont les résultats les plus informatif
 | P04 | 2026-11-23 | IA | Avec feedback retardé indexé (D ≥ 4), M4/M5 dépassent M2 nettement ; l'écart disparaît largement sans indexation | 65 | delayed_reward | — | — |
 | P05 | 2026-11-23 | IA | M5 ne bat pas un replay classique à nombre de mises à jour égal | 70 | delayed_reward | — | — |
 | P06 | 2026-11-23 | Humain | <à compléter> | | | | |
-| P07 | 2026-11-23 | IA | Sans récompense graduée ni signal interne, G1–G3 n'obtiennent presque jamais de récompense au début (exploration) et apprennent très lentement | 75 | imitation | — | — |
+| P07 | 2026-11-23 | IA | Sans récompense graduée ni signal interne, G1–G3 n'obtiennent presque jamais de récompense au début (exploration) et apprennent très lentement | 75 | imitation | Gribouillis aléatoires : 1 carré accepté / 60 000, 0 cercle (CR-06) | Partiellement confirmée (exploration) |
 | P08 | 2026-11-23 | IA | G5 (gabarit interne + maître) apprend plus vite que G3 (maître seul), en nombre d'essais | 60 | imitation | — | — |
 | P09 | 2026-11-23 | IA | G5′ (gabarit seul, sans maître) progresse mais plafonne sous G5 | 55 | imitation | — | — |
 | P10 | 2026-11-23 | IA | Le contrôle « gabarit brouillé » annule l'avantage de G5 | 70 | imitation | — | — |
-| P11 | 2026-11-23 | IA | Le cercle sera appris avant le carré (virage constant plus facile que l'alternance droit/virage) | 60 | imitation | — | — |
+| P11 | 2026-11-23 | IA | Le cercle sera appris avant le carré (virage constant plus facile que l'alternance droit/virage) | 60 | imitation | Indice contraire : le hasard approche le carré bien plus que le cercle (CR-06) | En cours |
 | P12 | 2026-11-23 | IA | H7 : « remontrer en insistant » est le facteur au plus gros effet de toute l'étude | 70 | imitation | — | — |
 | P13 | 2026-11-23 | IA | H8 : l'encouragement gradué rend l'apprentissage possible là où le pouce binaire échoue (début) | 75 | imitation | — | — |
 | P14 | 2026-11-23 | IA | H9 : le rappel reconstructif généralise mieux que le replay fidèle hors distribution | 50 | imitation | — | — |
