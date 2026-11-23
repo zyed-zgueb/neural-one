@@ -1,5 +1,7 @@
 # SHADOW LEARNING LAB — Document de conception (Étape 1)
 
+> **Mise à jour :** le paradigme principal est désormais « maître–élève » (l'élève refait la forme). Voir `PARADIGME_IMITATION.md`. Ce document reste la référence pour le générateur, les statistiques, l'instrumentation et la tâche de classification (secondaire).
+
 > Statut : **proposition à valider**. Aucun code n'est écrit tant que ce document n'est pas validé.
 > Objet : fixer l'architecture technique, la formalisation mathématique des modèles, le protocole
 > expérimental et les risques scientifiques **avant** toute implémentation.

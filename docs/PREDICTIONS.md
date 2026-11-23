@@ -13,3 +13,8 @@ et rendre visibles les surprises — qui sont les résultats les plus informatif
 | P04 | 2026-11-23 | IA | Avec feedback retardé indexé (D ≥ 4), M4/M5 dépassent M2 nettement ; l'écart disparaît largement sans indexation | 65 | delayed_reward | — | — |
 | P05 | 2026-11-23 | IA | M5 ne bat pas un replay classique à nombre de mises à jour égal | 70 | delayed_reward | — | — |
 | P06 | 2026-11-23 | Humain | <à compléter> | | | | |
+| P07 | 2026-11-23 | IA | Sans récompense graduée ni signal interne, G1–G3 n'obtiennent presque jamais de récompense au début (exploration) et apprennent très lentement | 75 | imitation | — | — |
+| P08 | 2026-11-23 | IA | G5 (gabarit interne + maître) apprend plus vite que G3 (maître seul), en nombre d'essais | 60 | imitation | — | — |
+| P09 | 2026-11-23 | IA | G5′ (gabarit seul, sans maître) progresse mais plafonne sous G5 | 55 | imitation | — | — |
+| P10 | 2026-11-23 | IA | Le contrôle « gabarit brouillé » annule l'avantage de G5 | 70 | imitation | — | — |
+| P11 | 2026-11-23 | IA | Le cercle sera appris avant le carré (virage constant plus facile que l'alternance droit/virage) | 60 | imitation | — | — |
