@@ -459,3 +459,22 @@ Les campagnes longues sont lancées en CLI ; l'interface lit les résultats en c
 5. **Régime de présentation** : une seule passe (online, proposé comme principal) + régime multi-passes à nombre de mises à jour égalisé ?
 6. **NumPy pur** (proposé) plutôt que PyTorch ?
 7. Extension future à **K > 2 classes** pour casser l'équivalence récompense/étiquette ?
+
+---
+
+## 14. Collaboration humain–IA et comptes rendus
+
+Le laboratoire a un second objectif : **garder l'humain informé et en position de décider**.
+Répartition assumée : l'humain apporte l'intuition (quelles idées valent d'être testées, ce qui
+« sonne faux »), l'IA apporte le raisonnement formel, l'implémentation et l'analyse.
+
+Dispositifs :
+- **Compte rendu à chaque étape** (`docs/comptes-rendus/`, format `MODELE_CR.md`) : lecture en
+  2 minutes en tête, puis séparation explicite **faits / interprétations / suppositions** avec niveau
+  de confiance, surprises, limites, et **questions qui sollicitent l'intuition** plutôt que de simples
+  validations.
+- **Journal des décisions** (`JOURNAL_DECISIONS.md`) : qui a décidé, pourquoi, alternatives écartées.
+- **Registre de prédictions** (`PREDICTIONS.md`) : humain et IA parient séparément avant chaque
+  campagne ; la confrontation est systématique. Les surprises sont les résultats les plus informatifs.
+- Les résultats négatifs sont rapportés avec la même visibilité que les positifs.
+- Le dashboard inclura un onglet « Compte rendu » affichant le dernier CR et les prédictions.
