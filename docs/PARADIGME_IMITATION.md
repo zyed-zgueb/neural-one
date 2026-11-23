@@ -262,3 +262,72 @@ la copie stockée ; le rappel reconstruit avec le réseau courant. C'est testabl
 | G6-mental | G6 + pratique mentale | idem | variable |
 
 Plan d'expériences : élèves × maîtres (muet / remontre / insiste) × démonstrations (1, 2, 4, 8 par forme).
+
+---
+
+## 11. Vie intérieure : penser quand on ne lui demande rien (CR-04)
+
+> Intuition humaine : « Le système doit penser en lui-même quand je ne lui demande rien, comme les
+> données de la journée qui s'organisent pendant le sommeil. »
+
+### 11.1 Trois régimes au lieu d'un
+| Régime | Entrées extérieures | Ce qui se passe |
+|--------|--------------------|-----------------|
+| **Éveil – leçon** | démonstrations, jugements du maître | perception, dessin, Shadow, plasticité récompensée |
+| **Éveil – rêverie** (pauses entre leçons) | aucune | rappels spontanés de souvenirs récents, pratique mentale, comparaison au carré intérieur |
+| **Sommeil** (après une série de leçons) | aucune, et aucune action | réorganisation de la journée (ci-dessous) |
+
+L'élève a donc une **boucle intérieure qui tourne en permanence** ; le maître n'interrompt que pour
+enseigner.
+
+### 11.2 Le sommeil de l'élève
+Deux phases, inspirées du sommeil humain :
+1. **Rejouer et ancrer** (≈ sommeil lent) : les Shadows de la journée sont rappelées spontanément,
+   sans indice extérieur, **en alternant les catégories** ; chaque rappel reconstructif nourrit le
+   carré / cercle intérieur (§10.4). Les souvenirs les plus marquants (forte récompense, forte surprise)
+   reviennent plus souvent.
+2. **Recombiner et alléger** (≈ sommeil paradoxal) : rappels mêlant des fragments de souvenirs
+   différents (un coin de tel carré, la taille de tel autre) → variations jamais vues, jugées par le
+   carré intérieur ; puis **allègement** global des connexions (homéostasie) pour oublier
+   l'accidentel et garder ce qui revient souvent.
+
+Au réveil : les Shadows individuelles sont effacées ou très affaiblies ; il reste les connexions et
+le concept intérieur.
+
+### 11.3 Point d'honnêteté fondamental
+Le sommeil **ne crée aucune information nouvelle** : il ne peut que **réorganiser** ce qui a été vécu.
+Un gain après sommeil ne peut donc venir que d'une meilleure abstraction (moins de détails
+accidentels, plus de points communs), pas de nouvelles connaissances. Et il comporte un risque
+symétrique : **ancrer ses erreurs** (faux souvenirs), puisque personne ne corrige pendant le sommeil.
+
+### 11.4 L'expérience la plus nette du projet
+1. Leçons (peu de démonstrations) → test sur formes nouvelles → **score avant sommeil**.
+2. Sommeil : **zéro démonstration, zéro récompense**.
+3. Même test → **score après sommeil**.
+
+Le **gain hors-ligne** (après − avant) est mesurable sans ambiguïté sur les données vues.
+Contrôles :
+- **Veille calme** : même durée, aucune activité intérieure.
+- **Faux sommeil** : même nombre de mises à jour, mais sur des rappels aléatoires (bruit).
+- **Sommeil sans recombinaison** / **sans allègement** : quelle phase compte ?
+- **Sommeil sans alternance des catégories**.
+- **Moment du sommeil** : juste après les leçons vs après interférence.
+Mesures complémentaires : précision sur formes déjà vues vs nouvelles (abstraction ou
+mémorisation ?), taux de « faux souvenirs » renforcés, rétention à long terme.
+
+### 11.5 Ressource comptée
+Le temps de réflexion intérieure est une ressource : **cycles de rêverie** et **cycles de sommeil**
+sont comptés et rapportés, comme les démonstrations et les essais.
+
+### 11.6 Ce qui est connu
+Replay hippocampique pendant le sommeil (Wilson & McNaughton 1994) ; consolidation active
+(Diekelmann & Born 2010) ; homéostasie synaptique (Tononi & Cirelli 2006) ; amélioration motrice
+après sommeil (Walker et al. 2002) ; « insight » après sommeil (Wagner et al. 2004) ; algorithme
+veille-sommeil (Hinton et al. 1995) ; Dyna, planification hors-ligne (Sutton 1990) ; replay génératif
+(Shin et al. 2017) ; sommeil simulé dans les réseaux (Tadros et al. 2022).
+**Nouveau ici** : un sommeil fait de *rappels reconstructifs* d'une Shadow sensorimotrice, dans un
+réseau à plasticité locale, évalué par le gain de généralisation à peu de démonstrations.
+
+### 11.7 Interface
+Onglet **« Rêves »** : ce que l'élève rappelle, dessine en pensée et recombine pendant la nuit,
+et l'évolution de son carré intérieur au fil du sommeil.

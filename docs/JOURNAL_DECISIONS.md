@@ -28,3 +28,5 @@ Une décision n'est jamais modifiée en place : on ajoute une nouvelle entrée q
 | D21 | 2026-11-23 | Trois maîtres : muet / remontre / remontre en insistant ; comparaisons d'élèves à maître égal | Maître muet seul | Intuition 2 | Humain → IA | Adoptée |
 | D22 | 2026-11-23 | Encouragement gradué (erreur de prédiction) + rafraîchissement de la Shadow après jugement | Pouce binaire seul | Intuition 3 | Humain → IA | Adoptée |
 | D23 | 2026-11-23 | Shadow C redéfinie : rappel reconstructif qui renforce et alimente une mémoire de concept | Réactivation = replay | Intuition 4 ; distingue enfin Shadow C du replay | Humain → IA | Adoptée |
+| D24 | 2026-11-23 | Boucle intérieure permanente : leçon / rêverie / sommeil ; sommeil en 2 phases (rejouer-ancrer, recombiner-alléger) | Apprentissage uniquement pendant les leçons | Intuition « penser quand on ne lui demande rien » | Humain → IA | Adoptée |
+| D25 | 2026-11-23 | Expérience phare : gain de généralisation après sommeil, sans aucune nouvelle donnée, avec contrôles (veille calme, faux sommeil) | — | Test le plus net et le plus lisible de l'hypothèse | IA | Adoptée, réversible |

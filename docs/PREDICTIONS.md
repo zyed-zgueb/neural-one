@@ -22,3 +22,6 @@ et rendre visibles les surprises — qui sont les résultats les plus informatif
 | P13 | 2026-11-23 | IA | H8 : l'encouragement gradué rend l'apprentissage possible là où le pouce binaire échoue (début) | 75 | imitation | — | — |
 | P14 | 2026-11-23 | IA | H9 : le rappel reconstructif généralise mieux que le replay fidèle hors distribution | 50 | imitation | — | — |
 | P15 | 2026-11-23 | IA | H6 : la composante motrice de la Shadow apporte peu tant que l'espace moteur est simple | 55 | imitation | — | — |
+| P16 | 2026-11-23 | IA | Gain hors-ligne positif après sommeil sur formes nouvelles, supérieur au « faux sommeil » | 45 | sommeil | — | — |
+| P17 | 2026-11-23 | IA | Sans allègement (homéostasie), le sommeil ancre surtout les erreurs : gain nul ou négatif | 55 | sommeil | — | — |
+| P18 | 2026-11-23 | IA | Le sommeil aide plus quand les démonstrations étaient peu nombreuses (1–2 par forme) que nombreuses | 55 | sommeil | — | — |
