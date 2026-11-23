@@ -25,3 +25,6 @@ et rendre visibles les surprises — qui sont les résultats les plus informatif
 | P16 | 2026-11-23 | IA | Gain hors-ligne positif après sommeil sur formes nouvelles, supérieur au « faux sommeil » | 45 | sommeil | — | — |
 | P17 | 2026-11-23 | IA | Sans allègement (homéostasie), le sommeil ancre surtout les erreurs : gain nul ou négatif | 55 | sommeil | — | — |
 | P18 | 2026-11-23 | IA | Le sommeil aide plus quand les démonstrations étaient peu nombreuses (1–2 par forme) que nombreuses | 55 | sommeil | — | — |
+| P19 | 2026-11-23 | Humain | Après une nuit, les idées (le concept) deviennent plus claires | — | sommeil | — | — |
+| P20 | 2026-11-23 | IA | Le sous-concept « côtés égaux » émergera en dernier, et plus facilement par le rythme du geste que par la vue | 60 | imitation | — | — |
+| P21 | 2026-11-23 | IA | Les élèves sans rappel reconstructif échouent surtout sur les tailles jamais vues (ils copient) | 65 | imitation | — | — |

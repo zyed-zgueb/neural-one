@@ -331,3 +331,57 @@ réseau à plasticité locale, évalué par le gain de généralisation à peu d
 ### 11.7 Interface
 Onglet **« Rêves »** : ce que l'élève rappelle, dessine en pensée et recombine pendant la nuit,
 et l'évolution de son carré intérieur au fil du sommeil.
+
+---
+
+## 12. Le concept intérieur et le critère de réussite (CR-05)
+
+> Intuitions humaines : « Je visualise un carré presque en tant que concept, sans détails. Je pense aux
+> angles, aux 4 coins, aux côtés égaux. Tous ces concepts s'entremêlent. » — « Après une nuit, les
+> idées deviennent plus claires. » — « Je sais que l'élève sait ce qu'est un carré parce qu'il en fait
+> de toutes tailles, avec des défauts, mais qui restent acceptables. »
+
+### 12.1 Le concept intérieur est un réseau de sous-concepts entremêlés
+Le carré intérieur n'est plus un prototype d'image : c'est une **assemblée** de sous-concepts reliés
+entre eux (coin, angle droit, côté droit, côtés égaux, « quatre », fermeture). Activer l'un évoque
+partiellement les autres (assemblées de Hebb, 1949 ; complétion de motifs).
+- Il est **sans détails** : il ne doit contenir ni position, ni taille, ni épaisseur.
+- **Règle d'honnêteté** : les sous-concepts ne sont **pas programmés**. Si je codais un « détecteur de
+  coin », je donnerais la réponse. L'élève ne dispose que de **sensations primitives** :
+  - visuelles : orientations locales du trait ;
+  - motrices (intuition 1) : « je tourne fort », « je vais tout droit », durée entre deux virages.
+  Les sous-concepts doivent **émerger** des co-occurrences : « coin » = « virage fort ressenti » +
+  « deux orientations qui se croisent » ; « côtés égaux » = **rythme régulier du geste** (même durée
+  entre les virages).
+- Les liens entre sous-concepts se renforcent par co-activation (pendant les leçons, la rêverie et
+  surtout le sommeil).
+
+### 12.2 « Plus clair après une nuit » → un indice de clarté mesurable
+La clarté du concept intérieur est mesurée par :
+1. **Absence de détails** : peut-on retrouver la taille ou la position des carrés vus à partir du
+   concept ? Plus c'est impossible, plus le concept est abstrait.
+2. **Netteté** : les sous-concepts propres au carré sont-ils fortement liés entre eux, et peu liés à
+   ceux du cercle ?
+3. **Stabilité** : le concept rappelé varie-t-il peu d'un rappel à l'autre ?
+Prédiction humaine enregistrée (P19) : la clarté augmente après le sommeil.
+
+### 12.3 Nouveau critère de réussite : « il en fait de toutes les tailles, avec des défauts acceptables »
+Ce critère remplace la précision de classification comme **mesure principale de compréhension**.
+
+**Test de l'élève qui sait** : on ne lui montre **aucun carré**. On lui indique seulement un cadre
+(petit, moyen, grand, y compris des tailles jamais vues) et une consigne « carré » ou « cercle ».
+Il réussit si, à la fois :
+- ses dessins sont **acceptés** par le maître (tolérance réglée, voir 12.4) ;
+- leur taille **suit** le cadre demandé ;
+- ils sont **divers** : pas la même copie à chaque fois. Des défauts qui varient sont un signe de
+  compréhension ; un copieur produit soit des copies quasi identiques, soit rien.
+- ses défauts sont **du bon type** : côtés un peu tremblés, coin un peu arrondi = acceptable ;
+  trois coins, forme ouverte = carré raté.
+
+**Métrique principale révisée** : nombre de démonstrations nécessaires pour que 90 % (puis 95 %) des
+dessins du « test de l'élève qui sait » soient acceptés, sur toutes les tailles, avec une diversité
+minimale.
+
+### 12.4 Tolérance du maître
+La frontière entre « défaut acceptable » et « ce n'est plus un carré » est fixée avant les expériences
+et documentée (et soumise à l'intuition humaine, CR-05 Q1). Elle est la même pour tous les élèves.
