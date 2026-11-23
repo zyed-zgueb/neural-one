@@ -3,7 +3,12 @@
 - E0 `pixels` : l'image d'encre aplatie (1024).
 - E1 `random` : projection aléatoire fixe + ReLU (contrôle « features sans a priori »).
 - E2 `edges`  : 8 filtres d'orientation fixes (dérivées de gaussienne orientées, type V1),
-                redressés, puis pooling moyen 8×8 -> 4×4×8 = 128 dimensions.
+                redressés, puis pooling moyen 8×8 -> 4×4×8 = 128 dimensions (garde la position grossière).
+- E3 `orientations` : mêmes filtres, pooling **global** puis normalisation par l'énergie totale
+                -> histogramme de 8 orientations, invariant à la position et (en grande partie) à la
+                taille. Ajouté après l'étape 3 : avec E0–E2, aucun modèle ne dépasse le hasard à moins
+                de ~30 exemples par classe (CR-07). C'est le biais inductif le plus fort ; il est
+                documenté comme tel.
 
 Aucun encodeur ne contient de détecteur de « coin » ou de « cercle » : ce serait donner la réponse
 (décision D26).
@@ -89,6 +94,31 @@ class EdgeEncoder(Encoder):
         return np.stack(maps, axis=1).reshape(len(X), -1)
 
 
+class OrientationHistogram(EdgeEncoder):
+    name = "orientations"
+
+    def __init__(self, n_orient: int = 8):
+        super().__init__(n_orient=n_orient, pool=32)
+
+    def __call__(self, X):
+        F = super().__call__(X)
+        return F / np.maximum(F.sum(1, keepdims=True), 1e-9)
+
+
 def get_encoder(name: str, seed: int = 0) -> Encoder:
     return {"pixels": PixelEncoder, "random": lambda: RandomEncoder(seed=seed),
-            "edges": EdgeEncoder}[name]()
+            "edges": EdgeEncoder, "orientations": OrientationHistogram}[name]()
+
+
+class Normalizer:
+    """Centrage-réduction estimé sur un échantillon **non étiqueté** du monde (rôle « norm »),
+    identique pour tous les modèles. Plancher sur l'écart-type (médiane) pour éviter d'amplifier
+    des dimensions quasi constantes (ex. pixels du bord)."""
+
+    def __init__(self, F_ref: np.ndarray):
+        self.mu = F_ref.mean(0)
+        sd = F_ref.std(0)
+        self.sd = np.maximum(sd, np.median(sd) + 1e-9)
+
+    def __call__(self, F: np.ndarray) -> np.ndarray:
+        return (F - self.mu) / self.sd

@@ -82,7 +82,7 @@ def test_train_test_disjoint():
 
 # ------------------------------------------------------------------ encodeurs
 
-@pytest.mark.parametrize("name", ["pixels", "random", "edges"])
+@pytest.mark.parametrize("name", ["pixels", "random", "edges", "orientations"])
 def test_encoders_shape_and_determinism(name):
     X = make_set("L2", 4, 0, "enc").X
     e1, e2 = get_encoder(name, seed=3), get_encoder(name, seed=3)
