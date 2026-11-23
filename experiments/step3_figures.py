@@ -30,7 +30,7 @@ def classification_figure(path_json: Path, passes: int, out: Path):
     table = S["table"]
     budgets = S["budgets"]
     encs = S["encoders"]
-    fig, axes = plt.subplots(1, len(encs), figsize=(4.1 * len(encs), 3.6), sharey=True)
+    fig, axes = plt.subplots(1, len(encs), figsize=(4.1 * len(encs), 4.2), sharey=True)
     for ax, e in zip(axes, encs):
         ax.axhline(0.9, color="#c9c8c1", lw=1, ls=(0, (3, 3)))
         ax.axhline(0.5, color="#c9c8c1", lw=1)
@@ -50,11 +50,12 @@ def classification_figure(path_json: Path, passes: int, out: Path):
         ax.set_ylim(0.45, 1.01)
         ax.grid(axis="y", color="#ecebe6", lw=0.8)
     axes[0].set_ylabel("précision sur formes jamais vues")
-    axes[-1].legend(loc="lower right", fontsize=7, frameon=False)
+    h, l = axes[0].get_legend_handles_labels()
+    fig.legend(h, l, loc="lower center", ncol=4, fontsize=8, frameon=False)
     regime = "1 passage (en ligne)" if passes == 1 else f"{passes} passages"
     fig.suptitle(f"Reconnaître cercle / carré avec peu d'exemples — niveau L2, {regime}, "
                  f"{S['reps']} répétitions (bandes : IC 95 %)", fontsize=10.5, color=INK, x=0.01, ha="left")
-    fig.tight_layout(rect=(0, 0, 1, 0.92))
+    fig.tight_layout(rect=(0, 0.12, 1, 0.92))
     fig.savefig(out, dpi=160)
     plt.close(fig)
 
