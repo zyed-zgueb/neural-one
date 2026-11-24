@@ -1,0 +1,24 @@
+réglage : 581s
+évaluation : 2231s
+G2-trace|presque|1                   acc=0.00 carré=0.00 cercle=0.00 | entraînement carré=0.00
+G2-trace|presque|4                   acc=0.00 carré=0.00 cercle=0.00 | entraînement carré=0.00
+G3-shadow-motrice|presque|1          acc=0.50 carré=0.00 cercle=1.00 | entraînement carré=0.00
+G3-shadow-motrice|presque|4          acc=0.45 carré=0.00 cercle=0.90 | entraînement carré=0.00
+G5-gabarit+fermeture|presque|1       acc=0.00 carré=0.00 cercle=0.00 | entraînement carré=0.00
+G5-gabarit+fermeture|presque|4       acc=0.00 carré=0.00 cercle=0.00 | entraînement carré=0.00
+G5-gabarit|presque|1                 acc=0.05 carré=0.00 cercle=0.10 | entraînement carré=0.00
+G5-gabarit|presque|4                 acc=0.00 carré=0.00 cercle=0.00 | entraînement carré=0.00
+G5-fermeture|presque|1               acc=0.10 carré=0.00 cercle=0.20 | entraînement carré=0.00
+G5-fermeture|presque|4               acc=0.00 carré=0.00 cercle=0.00 | entraînement carré=0.00
+G5-gabarit-brouillé|presque|1        acc=0.20 carré=0.00 cercle=0.40 | entraînement carré=0.00
+G5-gabarit-brouillé|presque|4        acc=0.05 carré=0.00 cercle=0.10 | entraînement carré=0.00
+G1-reinforce|presque|1               acc=0.40 carré=0.00 cercle=0.80 | entraînement carré=0.00
+G1-reinforce|presque|4               acc=0.25 carré=0.00 cercle=0.50 | entraînement carré=0.00
+G1+interne|presque|1                 acc=0.05 carré=0.00 cercle=0.10 | entraînement carré=0.00
+G1+interne|presque|4                 acc=0.05 carré=0.00 cercle=0.10 | entraînement carré=0.00
+G1+exploration|presque|1             acc=0.50 carré=0.00 cercle=1.00 | entraînement carré=0.00
+G1+exploration|presque|4             acc=0.50 carré=0.00 cercle=1.00 | entraînement carré=0.00
+G3-shadow-motrice|pouce|1            acc=0.01 carré=0.00 cercle=0.03 | entraînement carré=0.00
+G3-shadow-motrice|pouce|4            acc=0.00 carré=0.00 cercle=0.00 | entraînement carré=0.00
+G5-gabarit+fermeture|pouce|1         acc=0.20 carré=0.00 cercle=0.40 | entraînement carré=0.00
+G5-gabarit+fermeture|pouce|4         acc=0.05 carré=0.00 cercle=0.10 | entraînement carré=0.00

@@ -20,7 +20,7 @@ et rendre visibles les surprises — qui sont les résultats les plus informatif
 | P11 | 2026-11-23 | IA | Le cercle sera appris avant le carré (virage constant plus facile que l'alternance droit/virage) | 60 | imitation | Dessin : cercle 80–100 %, carré 0 % (CR-07) | Juste (pour une autre raison) |
 | P12 | 2026-11-23 | IA | H7 : « remontrer en insistant » est le facteur au plus gros effet de toute l'étude | 70 | imitation | — | — |
 | P13 | 2026-11-23 | IA | H8 : l'encouragement gradué rend l'apprentissage possible là où le pouce binaire échoue (début) | 75 | imitation | Pouce seul 0–15 % ; gradué 40–50 % (CR-07) | Juste |
-| P14 | 2026-11-23 | IA | H9 : le rappel reconstructif généralise mieux que le replay fidèle hors distribution | 50 | imitation | — | — |
+| P14 | 2026-11-23 | IA | H9 : le rappel reconstructif généralise mieux que le replay fidèle hors distribution | 50 | imitation | Oui en reconnaissance à 8 ex./forme (CR-08) | Juste (partiel) |
 | P15 | 2026-11-23 | IA | H6 : la composante motrice de la Shadow apporte peu tant que l'espace moteur est simple | 55 | imitation | — | — |
 | P16 | 2026-11-23 | IA | Gain hors-ligne positif après sommeil sur formes nouvelles, supérieur au « faux sommeil » | 45 | sommeil | — | — |
 | P17 | 2026-11-23 | IA | Sans allègement (homéostasie), le sommeil ancre surtout les erreurs : gain nul ou négatif | 55 | sommeil | — | — |
@@ -30,8 +30,8 @@ et rendre visibles les surprises — qui sont les résultats les plus informatif
 | P21 | 2026-11-23 | IA | Les élèves sans rappel reconstructif échouent surtout sur les tailles jamais vues (ils copient) | 65 | imitation | — | — |
 | P22 | 2026-11-23 | Humain | Les formes ouvertes / fermées sont des primitives reconnues dès la naissance (et utiles à l'apprentissage) | — | SV0 | — | — |
 | P23 | 2026-11-23 | IA | SV0 ≈ E3 sur L2 (la fermeture n'aide pas à séparer cercle et carré), mais SV0 > E3 sur L4 (contours fragmentés) | 50 | SV0 | L2 : SV0 = E3 ; L4 : SV0 < E3 (87 vs 93 %) (CR-07) | Faux |
-| P24 | 2026-11-23 | IA | Le signal interne de fermeture réduit d'au moins moitié le nombre d'essais nécessaires pour dessiner une forme acceptée | 60 | dessin | — | — |
-| P25 | 2026-11-24 | IA | Forme forte : Shadow + récompense + plasticité locale apprend avec **significativement moins d'exemples que la rétropropagation** (à perception égale, même nombre de passages autorisé) | 10 | étape 4+ | — | — |
-| P26 | 2026-11-24 | IA | En 1 seul passage, la Shadow permet à l'élève local de rattraper l'essentiel de son retard sur la rétropropagation (≥ 2/3 de l'écart de 16 points) | 65 | étape 4 | — | — |
-| P27 | 2026-11-24 | IA | … et fait **mieux qu'un replay classique** à nombre de mises à jour égal | 30 | étape 4 | — | — |
-| P28 | 2026-11-24 | IA | Gabarit intérieur + sensation de fermeture débloquent le carré (≥ 50 % de carrés acceptés sur formes nouvelles) | 60 | étape 4 | — | — |
+| P24 | 2026-11-23 | IA | Le signal interne de fermeture réduit d'au moins moitié le nombre d'essais nécessaires pour dessiner une forme acceptée | 60 | dessin | Aucun effet positif (CR-08) | Faux |
+| P25 | 2026-11-24 | IA | Forme forte : Shadow + récompense + plasticité locale apprend avec **significativement moins d'exemples que la rétropropagation** (à perception égale, même nombre de passages autorisé) | 10 | étape 4+ | Rétropropagation + replay reste devant (88 vs 78 % à 1 ex./forme) (CR-08) | Non confirmée |
+| P26 | 2026-11-24 | IA | En 1 seul passage, la Shadow permet à l'élève local de rattraper l'essentiel de son retard sur la rétropropagation (≥ 2/3 de l'écart de 16 points) | 65 | étape 4 | 80 % → 97 % à 8 ex./forme (CR-08) | Juste |
+| P27 | 2026-11-24 | IA | … et fait **mieux qu'un replay classique** à nombre de mises à jour égal | 30 | étape 4 | +3,2 pts à 8 ex./forme, dû au seul rappel imparfait (CR-08) | Juste, avec réserve |
+| P28 | 2026-11-24 | IA | Gabarit intérieur + sensation de fermeture débloquent le carré (≥ 50 % de carrés acceptés sur formes nouvelles) | 60 | étape 4 | 0 % de carrés pour tous (CR-08) | Faux |
