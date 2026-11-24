@@ -43,3 +43,18 @@ def run_classification(kind: str, hp: dict, Xtr, ytr, Xte, yte, passes: int,
         "updates": learner.counters.updates,
         "seconds": time.perf_counter() - t0,
     }
+
+
+def run_memory_classification(kind: str, hp: dict, R: int, Xtr, ytr, Xte, yte,
+                              order_rng: np.random.Generator, init_rng: np.random.Generator) -> dict:
+    """Un seul passage sur les exemples ; R réactivations de souvenirs après chaque expérience."""
+    from .shadow_classifiers import make_memory_learner
+    t0 = time.perf_counter()
+    learner = make_memory_learner(kind, Xtr.shape[1], hp, init_rng, R)
+    for i in order_rng.permutation(len(ytr)):
+        a, info = learner.act(Xtr[i], order_rng)
+        learner.feedback(info, 1.0 if a == ytr[i] else -1.0, int(ytr[i]))
+    pred = learner.predict(Xte)
+    return {"acc": float((pred == yte).mean()), "train_acc": float((learner.predict(Xtr) == ytr).mean()),
+            "presentations": learner.counters.presentations, "updates": learner.counters.updates,
+            "seconds": time.perf_counter() - t0}

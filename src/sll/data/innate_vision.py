@@ -188,3 +188,29 @@ class InnateVision(Encoder):
         if self.use_topology:
             parts.append(self.topology_features(X))
         return np.concatenate(parts, 1)
+
+
+def _enclosed(m: np.ndarray) -> bool:
+    """Existe-t-il du fond non relié au bord ? (propagation vectorisée, rapide)"""
+    free = ~m
+    reach = np.zeros_like(m)
+    reach[0, :], reach[-1, :], reach[:, 0], reach[:, -1] = free[0, :], free[-1, :], free[:, 0], free[:, -1]
+    while True:
+        p = np.pad(reach, 1)
+        grown = (p[:-2, 1:-1] | p[2:, 1:-1] | p[1:-1, :-2] | p[1:-1, 2:] | reach) & free
+        if (grown == reach).all():
+            break
+        reach = grown
+    return bool((free & ~reach).any())
+
+
+def closure_level(ink: np.ndarray, max_bridge: int = 3) -> float:
+    """Sensation innée de fermeture ∈ [0, 1] (même définition que `topology`, version rapide) :
+    1 = franchement fermé ; décroît avec la taille des lacunes à combler ; 0 = ouvert."""
+    m = binarize(ink)
+    if not m.any():
+        return 0.0
+    for k in range(max_bridge + 1):
+        if _enclosed(_dilate(m, k)):
+            return float(1 - k / (max_bridge + 1))
+    return 0.0
