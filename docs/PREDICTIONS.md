@@ -31,3 +31,7 @@ et rendre visibles les surprises — qui sont les résultats les plus informatif
 | P22 | 2026-11-23 | Humain | Les formes ouvertes / fermées sont des primitives reconnues dès la naissance (et utiles à l'apprentissage) | — | SV0 | — | — |
 | P23 | 2026-11-23 | IA | SV0 ≈ E3 sur L2 (la fermeture n'aide pas à séparer cercle et carré), mais SV0 > E3 sur L4 (contours fragmentés) | 50 | SV0 | L2 : SV0 = E3 ; L4 : SV0 < E3 (87 vs 93 %) (CR-07) | Faux |
 | P24 | 2026-11-23 | IA | Le signal interne de fermeture réduit d'au moins moitié le nombre d'essais nécessaires pour dessiner une forme acceptée | 60 | dessin | — | — |
+| P25 | 2026-11-24 | IA | Forme forte : Shadow + récompense + plasticité locale apprend avec **significativement moins d'exemples que la rétropropagation** (à perception égale, même nombre de passages autorisé) | 10 | étape 4+ | — | — |
+| P26 | 2026-11-24 | IA | En 1 seul passage, la Shadow permet à l'élève local de rattraper l'essentiel de son retard sur la rétropropagation (≥ 2/3 de l'écart de 16 points) | 65 | étape 4 | — | — |
+| P27 | 2026-11-24 | IA | … et fait **mieux qu'un replay classique** à nombre de mises à jour égal | 30 | étape 4 | — | — |
+| P28 | 2026-11-24 | IA | Gabarit intérieur + sensation de fermeture débloquent le carré (≥ 50 % de carrés acceptés sur formes nouvelles) | 60 | étape 4 | — | — |
